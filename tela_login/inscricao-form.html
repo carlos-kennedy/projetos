@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style-inscricao.css">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <title>Inscreva-se</title>
+</head>
+
+<body>
+
+    <div class="text-ini">
+
+        <h1>Inscreva-se</h1>
+
+        <p>Preencha todos os campos em branco abaixo para efetuar a inscrição completa, tá bom? </p>
+    </div>
+
+    <form action="login.html" method="get">
+
+        <div id="content-box">
+
+            <div class="custom-input">
+
+                <input type="text" name="nome" id="nome" placeholder="nome" required>
+                <input type="email" name="email" id="e-mail" placeholder="e-mail" required>
+                <input type="password" name="senha" id="senha" placeholder="senha" required>
+                <span class="an-date">
+                    <p>Quando você nasceu?</p>
+                </span>
+                <input type="date" name="data" id="data" required>
+
+            </div>
+
+            <div class="custom-radio">
+
+                <span class="genre">
+                    <p>Qual o seu gênero?</p>
+                </span>
+                <input type="radio" value="0" name="buttom" id="radio-1" required>
+                <label for="radio-1"></label>Masculino</label>
+                <input type="radio" value="1" name="buttom" id="radio-2" required>
+                <label for="radio-2"></label>Feminino</label>
+                <input type="radio" value="2" name="buttom" id="radio-3" required>
+                <label for="radio-3">não-binário</label>
+            </div>
+
+            <input id="enviar" type="submit" value="Enviar" target="_self" rel="next" href="login.html">
+
+        </div>
+
+    </form>
+</body>
+
+</html>

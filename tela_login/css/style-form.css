@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+::-webkit-scrollbar{
+    background: #15141f;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #eb4242;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 30px;
+
+}
+
+::selection{
+    background: #000;
+    color:#eb4242;  
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: url(/img/bg-form.jpg) fixed no-repeat;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+.perfil-client{
+    border-radius: 100px;
+    background-color: #eb4242;
+    padding: 10px;
+}
+
+.perfil-client:hover{
+    box-shadow: #e23e283b 0px 0px 0px 30px;
+    transition: 1.8s;
+    margin: 10px;
+    padding: 11px;
+}
+
+.text-inscricao{
+    color:#000;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+a{
+    position: relative;
+    top: 8.3em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+a:hover{
+    transition: 1s;
+    padding: 20px;
+    background-color: #eb4242;
+    box-shadow: #3a2121 0px 0px 15px 5px;
+}
+
+
+#form-box{
+    text-align: center;
+    color: #fff;
+    width: 30%;
+    height: 25em;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+    top: 5em;
+    height: 33em;
+    padding: 35px;
+    background: url(/img/red-light.jpg) fixed no-repeat;
+}
+
+#form-box:hover{
+    filter: blur(0px);
+    transition: 2s;
+    background-position: center left 10%;
+}
+
+#form-box:hover{
+    background-position: center 50%;
+}
+
+#e-mail{
+    text-align: center;
+    font-size: 12pt;
+    outline:none;
+    position: relative;
+    left: 30px;
+    margin: 10px;
+    width: 65%;
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    color:#eb4242;
+    background-color: #15141f;
+}
+
+#password{
+    text-align: center;
+    font-size: 12pt;
+    outline:none;
+    position: relative;
+    left: 30px;
+    margin: 10px;
+    width: 65%;
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    color:#eb4242;
+
+}
+
+#login-submit{
+    font-size: 12pt;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    display: block;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    width: 10em;
+}
+
+#login-submit:hover{
+    transition: 1s;
+}
+
+#login-submit:hover{
+    transition: 1s;
+    background: #1d1c1c;
+    color: #eb4242;
+}
+
+.inscricao{
+    width: 20px; 
+}
