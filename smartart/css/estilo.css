@@ -73,7 +73,7 @@ a {
 }
 
 .conteudo-postagem a:visited, .conteudo-postagem a:link{
-  padding: 3px;
+    padding: 3px;
     font-size: 20px;
     color:#000000;
 
@@ -83,7 +83,7 @@ a {
     border-radius: 10px;
     transition: 1s;
     padding-left: 10px;
-background: #985FF5;
+    background: #985FF5;
 
 }
 
@@ -128,9 +128,9 @@ padding-bottom
 .conteudo-postagem-b a:hover{
     transition: 1s;
     padding: 1px;
-   color: #ffffff ;
-   border-radius: 5px 5px;
-   background: #944BE2;  
+    color: #ffffff ;
+    border-radius: 5px 5px;
+     background: #944BE2;  
 }
 /* fim da formatação de links */
 
@@ -173,8 +173,8 @@ padding-bottom
 
 .fonte-cor-s {
     font-family: 'Merriweather Sans', sans-serif;
-color:#ffffff ;
-font-size: 1.4em;
+    color:#ffffff ;
+    font-size: 1.4em;
 }
 
 h1 {
