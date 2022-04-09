@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charste="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- link css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- fim link css -->
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <!-- fim owl css -->
+
+    <!-- Reponsividade -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fim responsividade -->
+    <link rel="shortcut icon" href="favicon/netflix-clone.ico" type="image/x-icon">
+    <title>Netflix clone</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                NETFLIX
+            </h1>
+            <nav>
+                <!-- <a href="index.html">Inicio</a> -->
+                <a href="https://www.netflix.com/br/browse/genre/83" target="_blank">Séries
+
+                </a>
+
+                <a href="https://www.netflix.com/br/browse/genre/5343" target="_blank">Filmes
+
+                </a>
+
+                <a href="https://www.netflix.com/br/browse/genre/6839" target="_blank">
+                    Documentários
+                </a>
+                <a class="inscricao" href="https://www.netflix.com/br/">
+                    Inscreva-se
+                </a>
+                <a class="entrar" href="https://www.netflix.com/br/login">
+                    entrar
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Use dov.filme-principal, para criar uma div com classe. -->
+        <div class="filme-principal">
+            <div class="container">
+                <!-- <h2>Sonic</h2> -->
+                <img class="logo-filme" src="img/sonic-logo.png" alt="sonic-logo" width="285px">
+
+                <p class="sinopses">Sonic, o ouriço azul mais veloz do mundo, vive isolado e sem amigos na Terra
+                    desde
+                    que precisou fugir
+                    de seu planeta natal. Todavia, ele recebe a ajuda de um policial quando o Dr. Ivo Robotinik, a mando
+                    do governo dos Estados Unidos, começa a persegui-lo.</p>
+                <div class="botoes">
+                    <!-- role:button:  isso fará com que os leitores de tela o anunciem como um botão -->
+                    <button role="button" class="botao" onclick="window.location.href='filme.html'">
+                        <i class="fa-solid fa-play"></i>
+                        Assistir agora
+                    </button>
+
+                    <span class="button-custom">
+                        <button role="button" class="botao"
+                            onclick="window.location.href='//www.themoviedb.org/movie/454626-sonic-the-hedgehog'">
+                            <i class="fa-solid fa-circle-info"></i>
+                            Mais informações
+                        </button>
+
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/min-v.jpg" alt="venom">
+            </div>
+            <div class="item">
+                <img src="img/min-sp.jpg" alt="Scott pilgrin">
+            </div>
+            <div class="item">
+                <img src="img/min-st.jpg" alt="Stranger things">
+            </div>
+            <div class="item">
+                <img src="img/min-st-mundo.jpg" alt="Stranger things interview">
+            </div>
+            <div class="item">
+                <img src="img/mini-adm.jpg" alt="Adam">
+            </div>
+            <div class="item">
+                <img src="img/minich.jpg" alt=" Chain Saw Massacre">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/374d9de808.js" crossorigin="anonymous"></script>
+
+    <footer>
+        <p>Desenvolvido por: Carlos Kennedy.</p>
+    </footer>
+
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+
+</html>
