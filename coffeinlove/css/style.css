@@ -8,12 +8,32 @@
 
 /* variáveis */
 :root {
+    /* cor de fundo e de textos nas miniaturas */
     --branco: #fff;
+
+    /* cor do texto */
     --preto: #000;
+
+    /* cor de fundo  */
     --roxo-escuro: #2B0060;
-    --roxo: #7200FF;
+
+    /* cor de texto do botao */
     --preto-roxo: #0E0020;
+
+    /* botao */
+    --roxo: #7200FF;
+
+    /*botao*/
     --verde: #8DFF00;
+
+    /*texto-h2*/
+    --verde-text: #A3CEBB;
+
+    /* texto-h2 */
+    --amarelo: #F9B459;
+
+    /* texto-h2 */
+    --rosa: #F4C7C6;
 }
 
 /* fim variáveis */
@@ -22,6 +42,7 @@
 * {
     margin: 0px;
     padding: 0px;
+
     box-sizing: border-box;
 }
 
@@ -43,18 +64,22 @@ body {
 }
 
 .container nav {
-    background-color: var(--roxo);
-    margin-top: 15px;
     display: flex;
     justify-content: center;
+    margin-top: 15px;
+
+    background-color: var(--roxo);
 }
 
 nav a {
     margin: 5px;
     padding: 10px;
+
     border-radius: 4px;
+
     color: var(--branco);
     text-decoration: none;
+
     transition: ease-in-out 0.4s;
 }
 
@@ -63,10 +88,11 @@ nav a:hover {
 }
 
 .logo {
-    align-items: center;
-    font-size: 35px;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    font-size: 35px;
 }
 
 .copo-smile {
@@ -79,9 +105,9 @@ nav a:hover {
 }
 
 .heart {
-    padding: 5px;
     width: 7%;
     height: auto;
+    padding: 5px;
 }
 
 /* fim navbar logo */
@@ -90,8 +116,8 @@ nav a:hover {
 
 .conteudo .container {
     display: flex;
-    align-items: flex-end;
-    flex-direction: row;
+    justify-content: end;
+    align-items: center;
 
     padding: 30px;
 
@@ -117,19 +143,23 @@ nav a:hover {
 }
 
 .botao {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     margin-top: 30px;
     padding: 14px;
-    width: 40%;
+    width: 50%;
 
     border: none;
     border-radius: 5px;
 
     cursor: pointer;
+
     background: var(--verde);
 
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.747);
+    color: #000000be;
 
     transition: ease-in-out 0.7s;
 }
@@ -138,10 +168,19 @@ nav a:hover {
 
     color: var(--preto-roxo);
 
-    box-shadow: #88ff387a -20px 19px;
+    box-shadow: #7300ffa2 -20px 19px;
 }
 
 /* fim conteudo miniatura */
+
+/* miniatura I em todos os botões */
+
+.info-logo {
+    margin-right: 10px;
+}
+
+/* fim miniatura I */
+
 
 /* Conteudo miniatura 2 */
 
@@ -159,6 +198,12 @@ nav a:hover {
 }
 
 .text-miniatura-2 {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+
+    text-align: end;
+
     color: var(--branco);
 }
 
@@ -166,19 +211,26 @@ nav a:hover {
     margin-top: 20px;
     margin-bottom: 10px;
 
-    color: var(--branco);
     font-size: 35px;
+
+    color: var(--rosa);
 }
 
 .text-miniatura-2 p {
-    color: var(--branco);
+    display: flex;
     width: 70%;
+
+    color: var(--branco);
 }
 
 .coffe-min-2 .botao {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+
     margin-top: 30px;
     padding: 14px;
-    width: 40%;
+    width: 50%;
 
     border: none;
     border-radius: 5px;
@@ -197,7 +249,7 @@ nav a:hover {
 
     color: var(--preto-roxo);
 
-    box-shadow: rgb(115, 0, 255, 0.4) -20px 19px;
+    box-shadow: rgba(140, 255, 0, 0.555) 20px 20px;
 }
 
 
@@ -209,9 +261,10 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: end;
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.6);
 
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .coffe-min-orange {
@@ -226,13 +279,233 @@ nav a:hover {
     margin-top: 20px;
     margin-bottom: 10px;
 
-    color: var(--branco);
+    color: var(--amarelo);
     font-size: 35px;
 }
 
 .text-miniatura-3 p {
     color: var(--branco);
+
     width: 70%;
 }
 
+.coffe-min-3 .botao {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+
+    margin-top: 30px;
+    padding: 14px;
+    width: 50%;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    background: var(--verde);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.747);
+
+    transition: ease-in-out 0.7s;
+}
+
+.coffe-min-3 .botao:hover {
+
+    color: var(--preto-roxo);
+
+    box-shadow: #7300ffa2 -20px 19px;
+}
+
+
 /* fim conteudo texto e miniatura 3 */
+
+/* Conteudo texto e miniatura 4 */
+
+.coffe-min-4 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.coffe-min-green {
+    width: 36%;
+}
+
+.text-miniatura-4 {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+
+    text-align: end;
+
+    color: var(--branco);
+}
+
+.text-miniatura-4 h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    color: var(--verde-text);
+    font-size: 35px;
+}
+
+.text-miniatura-4 p {
+    width: 80%;
+}
+
+.coffe-min-4 .botao {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+
+    margin-top: 30px;
+    padding: 14px;
+    width: 60%;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    background: var(--roxo);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.747);
+
+    transition: ease-in-out 0.7s;
+}
+
+.coffe-min-4 .botao:hover {
+    color: var(--preto-roxo);
+
+    box-shadow: rgba(140, 255, 0, 0.555) 20px 20px;
+}
+
+/* fim conteudo texto e miniatura 4 */
+
+/* conteudo adicional */
+
+.informacao-adicional {
+    display: flex;
+
+    text-align: center;
+
+    background: linear-gradient(to bottom, #1c1422, #604b73);
+    color: var(--preto-roxo);
+}
+
+.conteudo-adicional {
+    background: var(--branco);
+    margin: 0 auto;
+    width: 60%;
+}
+
+.conteudo-adicional h2 {
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+    font-size: 30px;
+}
+
+.conteudo-adicional p {
+    margin-top: 20px;
+    width: 80%;
+
+    font-size: 19px;
+}
+
+/* fim conteudo adicional */
+
+.conteudo-extra {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+
+    transition: ease-in-out 0.5s;
+
+    filter: grayscale(1);
+}
+
+
+.conteudo-extra:hover {
+    padding-bottom: 30px;
+
+    background: var(--roxo-escuro);
+    color: var(--branco);
+
+    filter: grayscale(0);
+}
+
+.imagem-latte-art {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+}
+
+
+.conteudo-extra-2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+
+    transition: ease-in-out 0.5s;
+
+    filter: grayscale(1);
+}
+
+.conteudo-extra-2:hover {
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+    color: var(--branco);
+
+    background: var(--roxo-escuro);
+
+    filter: grayscale(0);
+}
+
+.imagem-foto-de-cafe {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+}
+
+.conteudo-extra-3 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+
+    transition: ease-in-out 0.5s;
+
+    filter: grayscale(1);
+}
+
+.conteudo-extra-3:hover {
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+    background: var(--roxo-escuro);
+    color: var(--branco);
+
+    filter: grayscale(0);
+}
+
+.imagem-balcao {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+}
