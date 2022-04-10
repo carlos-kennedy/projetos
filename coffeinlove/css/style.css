@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+::-webkit-scrollbar {
+    width: 4px;
+
+}
+
+/* variáveis */
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --roxo-escuro: #2B0060;
+    --roxo: #7200FF;
+    --preto-roxo: #0E0020;
+    --verde: #8DFF00;
+}
+
+/* fim variáveis */
+
+/* configurações-resets */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* fim configurações-resets */
+
+body {
+    /* background: #c33764;   
+    background: -webkit-linear-gradient(to right, #c33764, #1d2671); */
+
+    background: linear-gradient(to bottom, #ad5389, #3c1053);
+    color: var(--preto);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar e logo */
+
+.container {
+    background: var(--branco);
+}
+
+.container nav {
+    background-color: var(--roxo);
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    color: var(--branco);
+    text-decoration: none;
+    transition: ease-in-out 0.4s;
+}
+
+nav a:hover {
+    background: var(--roxo-escuro);
+}
+
+.logo {
+    align-items: center;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.copo-smile {
+    width: 7%;
+    height: 100%;
+}
+
+.love-color {
+    color: var(--roxo)
+}
+
+.heart {
+    padding: 5px;
+    width: 7%;
+    height: auto;
+}
+
+/* fim navbar logo */
+
+/* conteudo e miniaturas */
+
+.conteudo .container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+
+    padding: 30px;
+
+    background: rgba(0, 0, 0, .4);
+}
+
+.coffe-min {
+    transform: scaleX(-1);
+    width: 25%;
+}
+
+.text-miniatura h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    color: var(--branco);
+    font-size: 35px;
+}
+
+.text-miniatura p {
+    color: var(--branco);
+    width: 70%;
+}
+
+.botao {
+    margin-top: 30px;
+    padding: 14px;
+    width: 40%;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    background: var(--verde);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.747);
+
+    transition: ease-in-out 0.7s;
+}
+
+.botao:hover {
+
+    color: var(--preto-roxo);
+
+    box-shadow: #88ff387a -20px 19px;
+}
+
+/* fim conteudo miniatura */
+
+/* Conteudo miniatura 2 */
+
+.coffe-min-2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 30px;
+
+    background: rgba(0, 0, 0, .5);
+}
+
+.coffe-min-pink {
+    width: 25%;
+}
+
+.text-miniatura-2 {
+    color: var(--branco);
+}
+
+.text-miniatura-2 h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    color: var(--branco);
+    font-size: 35px;
+}
+
+.text-miniatura-2 p {
+    color: var(--branco);
+    width: 70%;
+}
+
+.coffe-min-2 .botao {
+    margin-top: 30px;
+    padding: 14px;
+    width: 40%;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    background: var(--roxo);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.747);
+
+    transition: ease-in-out 0.7s;
+}
+
+.coffe-min-2 .botao:hover {
+
+    color: var(--preto-roxo);
+
+    box-shadow: rgb(115, 0, 255, 0.4) -20px 19px;
+}
+
+
+/* Fim conteudo 2 */
+
+/* Conteudo texto e miniatura 3 */
+
+.coffe-min-3 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+.coffe-min-orange {
+    width: 25%;
+}
+
+.text-miniatura-3 {
+    color: var(--branco);
+}
+
+.text-miniatura-3 h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    color: var(--branco);
+    font-size: 35px;
+}
+
+.text-miniatura-3 p {
+    color: var(--branco);
+    width: 70%;
+}
+
+/* fim conteudo texto e miniatura 3 */
