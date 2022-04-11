@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4627f7;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.container h2 {
+    color: #fff;
+    font-size: 32px;
+}
+
+
+.container img {
+    width: 65%;
+}
+
+.container p {
+    font-size: 20px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    background-color: #000;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    color: aqua;
+}
