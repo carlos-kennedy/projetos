@@ -96,7 +96,8 @@ nav a:hover {
 }
 
 .copo-smile {
-    width: 7%;
+    width: 70px;
+    margin-right: -10px;
     height: 100%;
 }
 
@@ -105,7 +106,7 @@ nav a:hover {
 }
 
 .heart {
-    width: 7%;
+    width: 70px;
     height: auto;
     padding: 5px;
 }
@@ -199,7 +200,7 @@ nav a:hover {
 
 .text-miniatura-2 {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: flex-end;
 
     text-align: end;
@@ -489,3 +490,40 @@ nav a:hover {
 }
 
 /* fim conteudo adicional */
+
+/* footer */
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+
+    background: var(--preto-roxo);
+    color: var(--branco);
+
+    text-align: center;
+    font-size: 12px;
+}
+
+footer img {
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+footer h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.copo-amassado-virado {
+    transform: scaleX(-1);
+}
+
+/* fim footer */
