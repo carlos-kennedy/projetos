@@ -36,11 +36,11 @@
             <nav>
                 <a href="#">Home</a>
 
-                <a href="#">Sobre</a>
+                <a href="#informacao-adicional">Sobre nós</a>
 
-                <a href="#">Portfolio</a>
+                <a href="#conteudo">produtos</a>
 
-                <a href="#">Contatos</a>
+                <a href="#">Contato</a>
 
             </nav>
         </div>
@@ -48,9 +48,9 @@
 
     <main>
 
-        <div class="conteudo">
+        <div id="conteudo">
             <div class="container">
-
+                <!-- Conteudo do primeiro conteudo com miniatura -->
                 <div class="text-miniatura">
 
                     <h2>Espresso</h2>
@@ -71,8 +71,11 @@
                 <img class="coffe-min" src="img/business-3d-side-view-of-coffee-paper-cup.png" alt="cafe-3d-miniatura">
 
             </div>
-            <!-- Conteudo do segundo conteudo com miniatura -->
+            <!-- fim primeiro conteudo -->
+
+
             <div class="coffe-min-2">
+                <!-- Conteudo do segundo conteudo com miniatura -->
 
                 <img class="coffe-min-pink" src="img/casual-life-3d-pink-cofee-cup-in-air.png"
                     alt="café-3d-miniatura-pink">
@@ -94,10 +97,11 @@
                     </button>
 
                 </div>
+                <!-- fim segundo conteudo -->
 
 
             </div>
-
+            <!-- Conteudo do terceiro conteudo com miniatura -->
             <div class="coffe-min-3">
                 <div class="text-miniatura-3">
                     <h2>Irish coffee</h2>
@@ -121,8 +125,10 @@
                 <img class="coffe-min-orange" src="img/casual-life-3d-opened-orange-coffe-cup.png"
                     alt="café-3d-miniatura-laranja" srcset="">
             </div>
+            <!-- Fim do terceiro conteudo -->
 
             <div class="coffe-min-4">
+                <!-- Conteudo do quarto conteudo com miniatura -->
                 <img class="coffe-min-green" src="img/casual-life-3d-green-coffee-cup-on-ground.png"
                     alt="café-3d-miniatura-verde">
 
@@ -144,13 +150,13 @@
 
                     </button>
 
-
-
                 </div>
 
             </div>
+            <!-- Fim quarto conteudo -->
 
-            <div class="informacao-adicional">
+            <div id="informacao-adicional">
+                <!-- Começo das informações adicionais sobre nos -->
                 <div class="conteudo-adicional">
 
                     <div class="card-1">
@@ -212,6 +218,7 @@
                 </div>
 
             </div>
+            <!-- Fim do conteudo adcional sobre nos -->
     </main>
 
     <footer>
@@ -222,9 +229,17 @@
             Desenvolvido por Carlos Kennedy
         </h3>
 
-        <img class="copo-amassado-virado"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAIOUlEQVR4nO2dbawdRRnH/w+VFiqlYKBQpaU0aYuIltRoQFQwkZdE0IDRhAj9YigmphATv2g0qd80xg++QUqiNMoHBYPaolYlRqPWEjDoh0Lv1VLvrbVgg9LSXijU+/PD7OHce87M3p09O7vn9O4vOenNnp15njn/eWZm52UrtbS0tLS0tLS0tLS01AhwLrCwaT+axJoyDGyU9G1JZ0ialPRs9nla0p7s7/1mRlM+1kHtAgBLJN0r6fYCtx+R9Hf1i7PXzI4nc7JGahUA2CDpB5LWVJDdIXUjZWSjphYBAJN0t6SvSFqU2NwJSfvUL86YmR1LbDuaygQATpP0LkmXSzpP0ktytXRC0pck3VSVrZIg19eMSxqTtDf7d1zSgaaiZmABgNMl3SNps6SVA3vUDFPqijEm6fdm9lgdhgcSALhE0na5Wl+WrZIekLRW0qXZv+uyf1M3VyFOSrrGzHalNlRaAGC1pD9KurBkFkck3WlmDwfyP03SxXJiXKquKOskvaWkzRgmJV1hZv9NaaSUANnD0y5J7yxp93FJt5nZ/pL2l6grSK84Z5b0ycePzezWCvOrBuAuyjENfD3l02/2dP1eYBPwZWAHsA/4X0mfP53KV6l8BOyVq20+fifpCUlnq9t8XCDp35I2mtkvy9gcFOCN6kZJx6+12eesnKSvSLrSzP6a3MkiACtzasvdgTTnAOfU7WtRgBXAfTnleiYTsHmAj4WcbNq3QQAWAU/miPAz4HZgPW6A0JijXww4+K3GnKoIYA1wNEeEDi8A9wIXN+HkgwGnNtfuTAKAjxcQoMPLwD11O/hEwJkbanUkIcADESIAfK6srehREHBEboTTyxH551nGzeyVsg42Aa7DfVJupFQoiaRbzOynsbaiBADeLOlgpI1puQm5cc0WZszM/hmZV20A6yXtllswKsKkpLea2VSMnVgBPiDpNzFp5uCYuoL0ihNVkBQAyyRdpu7zwnpJ10p6QyDJHWb2YIyNWAE+Jem+mDQlQdIB+cWZbHLBBTcHtlP+RaXtZvaRmPxCSoZYG3l/WUxuanulpOt6vpsCxuXpb8zspeSOmT2bjfh2er5+e3R+MTcDS9V9nO+dOi7aVqbkoGbP63fEmTCz6aqM4J7qfbOkU2YW9cRcyYoY7slwg9wc0DByQl1RZjVpZvZibGbAhXKrfb0cNrNlMXnFNkFezGwa+IvciMf3mP4eSavUnTruRM3iKuwXYJFc89DXRADPa3Yf0/n7H2Z2MpBfaCLyuVjHKhFAkszsJHBYbuazl4Nm9qfei8C5kt4mN9JYPePvVfILmYILss81PddfAw6of9fFHoWfD/bGGq9MgIxD8guwXG6cPItstekP2ed1gMWavcgys7/JmzquktPlKsVqSR/s+e7VQJrxWCMpBLjCc315TCbZM8BT2WcWnqjpRM46SQsi/S1LaEGp8QgItYFl1437yImahZIuUr8475AU1TEOwFhsghQR4CMqAspgZq+qu4Vxx8zvsqiZ2cekipq/xSY4ZQTII4uaP2ef18HtaVqhfnEuV3zUPldmSFspwEcD07U75k49XADnA9+MmJL+bRk7I9cH1IWZHQbeF/j6J5K2afYi/+N1+RYEWB2oHUM77RwCuDKntr+/af+8AGcGHH6NJheySwB8N1CWZ3C7vYcT4MWA43UNBQcGWAocC5TjM1XaSlErh3IkFMkdknyzmickRS24zMVQCQBUPSgoy52B6z8ys8NVGkohQGgklCsAsEXSo0Cj6wrAVXJPzz621ulLKYCvBdrOz+ek2TLjvp1NigBsG8nOtwPw2UABvhG4f4vn3kZEyDrf4wH/692AVRbgE4EC9B3ECPz4jYkAbA748jLwphQ2G+sDcB3uu3PyuUHSI0ChY0rAYiB6UbyHTYHrD5vZfwbMux6AywK1aJ/n3oXA9pwoyI0E4AzgZuB7dDfVPoSb/Yz1++ocH64u81s0Au6Eig/vRqtYEQI/ei//Am6O8Pl6YCKQ19OMQufbATBcm+ljaSDNIuDnc4jwGPBDwk+ovUwD9wO+fawdu2dn90zn5OM9dDLUAPsDhQntJigaCWXwRgNwHeFa32GKRJ1vUoBdgQJdO0e6VCJA1jfgav1W8mt9h211/WaVAjwSKNBtBdIWaY7KMsHctR4KNF9VkWqKuPR8kJmdkHSLpF8UtHVc0kNyLwM5MMe9nf2meUxKutHMNpnZ0YI+DBfAFwI166sReeQ1R1O4878bgbNmpIlpXnyUGsIOHcAnAwX8fmQ+M0Xw/uiBdHnDSh9Rw9ahB/hQoKDRbyDB9Qkfxu2Wi0lXZIjZYQK4Pta3oQXYECjongZ8KTLc7HDKNEHLAwVsZD5l3kUDsAA4GShglW8zifVr/kQDcChQsFUN+xUTDUWHwsMH8FSgUFc17ZtUOBqOAkl3XKfcqxN6GBuKXXJm9mu5EzP3y53K9LFEbs9oMpoQYGi2p5jZUTO7S9KNCvubNGLntQAdzOxXkr4T+HpkBSi1PaVBdgeuj6wAIxMBGbvl7wvWAOelMjpvO+FezOwF+U+4mPI3DwxEGwGzCb0JJtnv1IQAy1KPrQfgosD1viO2VZFMgOwlTb4zUwsknZ/K7oCE3sib7IBJ6kMTIzMSyjpa35T3VMpNWakFGKV+INT8zLXMORCtAF1CAiQ939aUAMM4FF0RuD7SETAyfYDmWQS0AmSkPpMVEuBWYFT+p6ORboJCAowSp2QTNEokjYDk+95x5wIaW4gfkOi3IMZSx+sDnq/BRiqS1n6pHgFGuRlKLkBLS0tLS0tLS0tLS0tLzfwfq3QWfFoevAsAAAAASUVORK5CYII=">
 
+        <!-- <div id="contato"> -->
+
+        <h4>Contato</h4>
+        <p><a href="mailto:carlosjustcarlos@outlook.com?" subject="subject text">Carlosjustcarlos@outlook.com</a>
+        </p>
+
+        <h4>Repositório</h4>
+        <p><a href="https://github.com/carlos-kennedy">https://github.com/carlos-kennedy</a></p>
+
+        <!-- </div> -->
     </footer>
 
 </body>

@@ -112,7 +112,7 @@ nav a:hover {
 
 /* conteudo e miniaturas */
 
-.conteudo .container {
+#conteudo .container {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -391,7 +391,7 @@ nav a:hover {
 
 /* conteudo adicional */
 
-.informacao-adicional {
+#informacao-adicional {
     display: flex;
 
     background: linear-gradient(to bottom, #2C152B, rgb(69, 44, 90));
@@ -451,7 +451,7 @@ nav a:hover {
     filter: grayscale(0);
 }
 
-.informacao-adicional .botao {
+#informacao-adicional .botao {
     width: 70%;
     margin: 0 auto;
     margin-top: 30px;
@@ -471,7 +471,7 @@ nav a:hover {
     transition: ease-in-out 0.3s;
 }
 
-.conteudo-adicional .botao:hover {
+#informacao-adicional .botao:hover {
     width: 75%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -495,6 +495,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     padding: 15px;
 
@@ -506,7 +507,7 @@ footer {
 }
 
 footer img {
-    width: 40px;
+    width: 30px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -514,12 +515,36 @@ footer img {
 footer h3 {
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 15px;
+
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
+    border-radius: 9%;
 }
 
-.copo-amassado-virado {
-    transform: scaleX(-1);
+footer img {
+    margin-bottom: -4px;
+
+    text-align: center;
 }
+
+footer h4 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    font-size: 12px;
+}
+
+footer a {
+    font-size: 14px;
+    color: var(--roxo);
+    text-decoration: none;
+    transition: ease-in-out .4s;
+}
+
+footer a:hover {
+    color: var(--verde);
+}
+
 
 /* fim footer */
