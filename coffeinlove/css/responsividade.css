@@ -28,7 +28,7 @@
         height: auto;
     }
 
-    .conteudo .container {
+    #conteudo .container {
         display: flex;
         align-content: center;
         flex-direction: column;
