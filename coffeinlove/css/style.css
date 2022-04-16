@@ -68,27 +68,20 @@ body {
     justify-content: center;
     margin-top: 15px;
 
-    background-color: var(--roxo);
 }
 
 nav a {
     margin: 8px;
     padding: 14px;
 
-    /* border-radius: 4px; */
-
-    color: var(--branco);
+    color: var(--preto-roxo);
     text-decoration: none;
 
     transition: ease-in-out 0.4s;
 }
 
-/* nav a:hover {
-    background: var(--roxo-escuro);
-} */
-
 nav a:hover {
-    margin: -15px;
+    margin: -14px;
 }
 
 .logo {
@@ -516,7 +509,6 @@ footer img {
     width: 40px;
     margin-left: 20px;
     margin-right: 20px;
-
 }
 
 footer h3 {
