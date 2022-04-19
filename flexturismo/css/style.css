@@ -1,0 +1,251 @@
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* fim import */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--azul);
+}
+
+:root {
+    --azul: #112959;
+    --branco: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: var(--branco);
+    background-color: var(--azul);
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--branco);
+    margin: 10px;
+}
+
+/* Trecho de apresentação */
+
+.apresentacao {
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto-apresentacao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    color: var(--azul);
+}
+
+.texto-apresentacao h1 {
+    margin-bottom: 10px;
+}
+
+.texto-apresentacao p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    letter-spacing: 1px;
+    width: 70%;
+    padding: 12px 12px;
+
+    text-align: center;
+    border-radius: 100px;
+
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+/* Fim do trecho de apresentação */
+
+/* Trecho sobre-nós */
+#quem-somos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#quem-somos h2 {
+    padding-left: 5px;
+    color: var(--azul);
+    border-left: var(--azul) 5px solid;
+}
+
+#quem-somos p {
+    padding-top: 30px;
+}
+
+/* fim trecho sobre-nós */
+
+/* Trecho nossos serviços */
+
+#servicos {
+    padding: 40px;
+
+    color: var(--branco);
+    background-color: var(--azul);
+}
+
+#servicos h2 {
+    margin-left: 110px;
+    margin-bottom: 30px;
+
+    text-align: left;
+}
+
+#servicos img {
+    width: 80%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.item-2 {
+    order: -1;
+}
+
+.cards p {
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.cards a {
+    padding: 13px;
+    border-radius: 30px;
+
+    color: var(--azul);
+    background-color: var(--branco);
+}
+
+/* Fim trecho de nossos serviços */
+
+/* Trecho de nossos planos */
+
+#planos {
+    flex-direction: column;
+    min-height: 80vh;
+    padding-top: 50px;
+}
+
+#planos h2 {
+    margin-left: 10px;
+    font-size: 32px;
+}
+
+.card-plano {
+    flex: 1;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin: 0px 10px;
+
+    border: 5px solid var(--azul);
+}
+
+.card-plano h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    border-bottom: 3px solid var(--azul);
+
+    text-align: center;
+    font-size: 23px;
+}
+
+.card-plano ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+    list-style-type: square;
+}
+
+.card-plano ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.card-plano ul li::before {
+    content: "";
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--azul);
+}
+
+.card-plano li {
+    padding-top: 5px;
+}
+
+.list-planos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-plano .btn {
+    letter-spacing: 1px;
+    margin: 75px;
+    margin-bottom: 20px;
+    padding: 12px 12px;
+
+    text-align: center;
+    border-radius: 100px;
+
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+/* Fim trecho de nossos planos */
+
+/* Trecho do rodape com informações do dev */
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    color: var(--branco);
+    background-color: var(--azul);
+}
+
+/* Fim trecho do rodape com informações do dev */

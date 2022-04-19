@@ -1,0 +1,90 @@
+@media(max-width: 992px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header ul {
+        margin-top: 30px
+    }
+
+    .apresentacao {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao img {
+        width: 90%;
+    }
+
+    .apresentacao .btn {
+        padding: 20px;
+        width: 90%;
+    }
+
+    #quem-somos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    #quem-somos p {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    #servicos h2 {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards p {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .cards a {
+        padding: 20px;
+    }
+
+    .cards img {
+        width: 85%;
+        margin-top: 60px;
+    }
+
+    #planos h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .card-plano {
+        margin-bottom: 20px;
+    }
+
+
+    .list-planos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 90px;
+        padding: 20px;
+    }
+
+
+}
