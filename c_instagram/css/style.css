@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+}
+
+/* Container pai */
+.instagram-wrapper {
+    display: flex;
+    /* eixo Y */
+    align-items: center;
+    /* eixo X */
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+
+/* fim container pai */
+
+/* container da img de telefone */
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 55rem;
+}
+
+/* fim */
+
+/* container pai dos grupos */
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    /* ficou horizontal por conta do column*/
+    justify-content: space-around;
+    /*  ficou vertical por conta do column */
+    flex-direction: column;
+    width: 80%;
+    min-height: 34rem;
+}
+
+/* fim container pai dos grupos */
+
+/* Grupo de login e logout */
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray
+}
+
+.group:nth-child(1) {
+
+    /* E um seletor de css que pega os filhos desse elemento selecionado
+se estiver com 1 ele pegará o primeiro elemento, se estiver com 2 ele pegará o segundo elemento.
+*/
+    min-height: 19rem;
+    margin-bottom: 30px;
+}
+
+.instagram-logo {
+    height: 6.5rem;
+}
+
+.profile-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 8rem;
+}
+
+.instagram-login {
+    text-align: center;
+    margin-top: 20px;
+    width: 60%;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0095f6;
+}
+
+.instagram-logout {
+    margin-top: 20px;
+    color: #0095f6;
+}
+
+.not-account {
+    text-align: center;
+    color: rgb(160, 160, 160);
+}
+
+.not-account:nth-child(1) {
+    margin-bottom: 1rem;
+}
+
+.link-blue a {
+    color: #0095f6;
+}
+
+/* fim de grupo login e logout */
+
+/* Grupo download mobile */
+
+.get-the-apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+.download img {
+    margin: 0px .2rem;
+    width: 38%;
+}
+
+.applestore a {
+    order: 0;
+}
+
+.playstore {
+    order: 2;
+}
+
+/* fim grupo de download mobile */
+
+.cpr-favicon {
+    color: rgb(160, 160, 160);
+}
+
+.cpr-favicon a {
+    color: rgb(160, 160, 160);
+    transition: 0.6s ease-in-out;
+}
+
+.cpr-favicon a:hover {
+
+    border-bottom: 1px solid #fff;
+}

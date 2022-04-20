@@ -1,0 +1,41 @@
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+
+    .instagram-login {
+        width: 70%;
+    }
+
+    .download img {
+        margin: 0px .2rem;
+        width: 47%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+
+    .group:nth-child(1) {
+        margin-bottom: 10px;
+    }
+}
