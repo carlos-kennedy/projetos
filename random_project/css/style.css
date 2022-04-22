@@ -366,9 +366,7 @@ footer {
 }
 
 .dev {
-    margin-top: 1rem;
     font-size: 17px;
-
 }
 
 .social-icons {
@@ -389,7 +387,7 @@ footer {
     margin-top: 2px;
     text-align: center;
 
-    color: var(--white);
+    color: var(--dark-red);
 }
 
 .cpr a {
