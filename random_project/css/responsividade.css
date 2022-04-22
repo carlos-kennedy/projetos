@@ -1,12 +1,3 @@
-@media (max-width: 1024px) {
-
-    .container {
-        width: 90%;
-    }
-
-
-}
-
 @media (max-width: 650px) {
 
     header {
@@ -15,6 +6,59 @@
         flex-direction: column;
     }
 
-    
 
+    .ilustracao {
+        display: none;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .box-form {
+        width: 100%;
+        height: 105vh;
+    }
+
+    .email {
+        margin: -1.5rem;
+    }
+
+    .enviar {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .link-buttom a {
+        padding: 5px 10px;
+        margin: 3rem;
+    }
+
+    .change-password {
+        position: relative;
+        top: 2rem;
+        padding: 20px;
+    }
+
+    .subscription .subs {
+        position: relative;
+        top: 2rem;
+        padding: 20px;
+    }
+
+    .group-link:nth-child(2) {
+        height: 14vh;
+    }
+
+    .ou {
+        margin: -2rem;
+    }
+
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
