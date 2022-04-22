@@ -37,13 +37,13 @@
     .change-password {
         position: relative;
         top: 2rem;
-        padding: 20px;
+        padding: 15px;
     }
 
     .subscription .subs {
         position: relative;
         top: 2rem;
-        padding: 20px;
+        padding: 16px;
     }
 
     .group-link:nth-child(2) {
