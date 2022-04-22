@@ -1,0 +1,399 @@
+/* imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* fim imports */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+}
+
+/* variaveis */
+
+:root {
+    --dark-red: #9B321D;
+    --red: #CF4327;
+    --dark-red-less-opacity: #34110acc;
+
+    --black: #000;
+    --white: #fff;
+
+    --blue: #27B3CF;
+    --dark-blue: #062c4d;
+}
+
+/* fim variaveis */
+
+body {
+    justify-content: center;
+    background-color: var(--dark-red);
+}
+
+/* inicio header e navegação */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--white);
+}
+
+input {
+    margin-top: 10px;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.navegacao {
+    padding: 20px;
+}
+
+.logo {
+    margin: 1rem;
+
+    font-size: 20px;
+
+    color: var(--dark-red);
+}
+
+.navegacao a {
+    margin: 1rem;
+
+    font-weight: bold;
+
+    color: var(--dark-red);
+
+    transition: ease-in-out .5s;
+}
+
+.navegacao a:hover {
+    margin: 2rem;
+    padding-bottom: 10px;
+}
+
+/* fim header e navegação */
+
+/* Inicío container pai */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 100vh;
+}
+
+/* fim container pai */
+
+.ilustracao {
+    width: 45rem;
+    max-height: 95vh;
+}
+
+/* inicio caixa de formulário */
+
+.box-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7rem;
+    width: 20rem;
+
+    text-align: center;
+}
+
+.box-form {
+    width: 28rem;
+    height: 98vh;
+
+    border-radius: 10px;
+
+    background: url(../img/layered-waves-bottom.svg) no-repeat;
+}
+
+.inputs {
+    padding: 4rem;
+
+    border-radius: 10px;
+
+    background: url(../img/layered-waves-top.svg) no-repeat;
+}
+
+.box-form h1 {
+    position: relative;
+    top: -4rem;
+
+    font-size: 40px;
+
+    padding: 30px;
+
+    border-bottom: 2px solid var(--red);
+
+    color: var(--red);
+}
+
+.email {
+    width: 20rem;
+    padding: 15px;
+
+    font-size: 20px;
+}
+
+.senha {
+    margin-top: 1.9rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 15px;
+
+    font-size: 20px;
+}
+
+.enviar {
+    width: 10rem;
+    padding: 15px;
+    margin-top: 2.5rem;
+    margin-bottom: .5rem;
+    letter-spacing: 2px;
+
+    font-size: 19px;
+
+    color: var(--white);
+    background-color: var(--blue)
+}
+
+/* fim caixa de formulário */
+
+/* inicío de caixa com links */
+
+.group-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin-top: .5rem;
+    width: 27rem;
+    height: 20rem;
+
+    font-size: 15px;
+}
+
+
+.link-buttom a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    padding-right: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+
+    border-radius: 10px;
+
+    background: url(../img/blob-scene-haikei.svg) center left;
+    color: var(--white);
+
+    transition: ease-in-out .9s;
+
+}
+
+.link-buttom a:hover {
+    box-shadow: inset var(--dark-blue) 0px 0px 20px;
+    box-shadow: var(--dark-blue) 0px 0px 15px;
+
+    background: url(../img/blob-scene-haikei.svg) bottom center;
+}
+
+.logo-facebook {
+    margin-left: -5px;
+    margin-right: 5px;
+    width: 35px;
+
+    overflow: hidden;
+
+    border-radius: 0;
+}
+
+
+.ou {
+    margin-bottom: .1rem;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    color: var(--dark-red-less-opacity);
+}
+
+.ou::after,
+.ou::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 8rem;
+    height: 1px;
+
+    background-color: #34110aa9;
+}
+
+.ou::before {
+    right: 0.5rem;
+    margin-left: -100%;
+}
+
+.ou::after {
+    left: 0.5rem;
+    margin-right: -100%;
+}
+
+.change-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+
+    font-size: 16px;
+
+    border-radius: 10px;
+
+    color: var(--black);
+    background-color: var(--white);
+
+}
+
+.c-pass {
+    padding: 5px;
+
+    color: var(--black);
+    background-color: var(--white);
+
+    transition: ease-in-out .5s;
+}
+
+.c-pass:hover {
+    letter-spacing: 2px;
+}
+
+.lock-pass {
+    margin-right: .2rem;
+    width: .9rem;
+
+    transition: ease-in-out .4s;
+}
+
+.c-pass .lock-pass:hover {
+    width: 1.1rem;
+}
+
+.subscription .subs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+
+    transition: ease-in-out .5s;
+}
+
+.subscription .subs {
+    padding: 5px;
+
+    border-radius: 10px;
+
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.subscription img {
+    margin-right: .2rem;
+
+    width: 1.7rem;
+
+    transition: ease-in-out .4s;
+}
+
+.subscription:hover {
+    letter-spacing: 2px;
+}
+
+.subscription img:hover {
+    width: 2rem;
+}
+
+.group-link:nth-child(2) {
+    height: 20vh;
+
+    background: url(../img/layered-waves-bottom.svg) no-repeat;
+}
+
+.group-link:nth-child(3) {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+
+    border: none;
+}
+
+/* fim caixa com links */
+
+/* começo footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: -1rem;
+    background-color: var(--white);
+}
+
+.dev {
+    margin-top: 1rem;
+    font-size: 17px;
+
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: .6rem;
+}
+
+.github,
+.linkedin {
+    width: 1.8rem;
+}
+
+
+.cpr p {
+    padding: 5px;
+    margin-top: 2px;
+    text-align: center;
+
+    color: var(--white);
+}
+
+.cpr a {
+    color: var(--dark-red-less-opacity);
+}
+
+/* fim footer */
