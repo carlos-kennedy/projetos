@@ -103,8 +103,13 @@ input {
 /* fim container pai */
 
 .ilustracao {
-    width: 45rem;
+    width: 40rem;
     max-height: 95vh;
+    transition: ease-in-out 1.2s;
+}
+
+.ilustracao:hover {
+    transform: rotate(-2.9deg);
 }
 
 /* inicio caixa de formulário */
@@ -114,15 +119,16 @@ input {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-left: 3.5rem;
     padding: 7rem;
-    width: 20rem;
 
     text-align: center;
 }
 
 .box-form {
     width: 28rem;
-    height: 98vh;
+    height: 102vh;
+    margin-bottom: 5rem;
 
     border-radius: 10px;
 
@@ -169,7 +175,7 @@ input {
 .enviar {
     width: 10rem;
     padding: 15px;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     margin-bottom: .5rem;
     letter-spacing: 2px;
 
@@ -201,7 +207,7 @@ input {
     align-items: center;
     flex-direction: column;
     margin-top: .5rem;
-    width: 27rem;
+    width: 28rem;
     height: 20rem;
 
     font-size: 15px;
@@ -288,7 +294,6 @@ input {
 
     color: var(--black);
     background-color: var(--white);
-
 }
 
 .c-pass {
@@ -353,8 +358,6 @@ input {
 
 .group-link:nth-child(2) {
     height: 20vh;
-
-    background: url(../img/layered-waves-bottom.svg) no-repeat;
 }
 
 .group-link:nth-child(3) {
