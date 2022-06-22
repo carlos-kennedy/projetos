@@ -73,7 +73,7 @@ body {
 }
 
 section {
-  padding-block: calc(var(--nav-height) + 6.4rem);
+  padding-top: calc(var(--nav-height) + 6.4rem);
 }
 
 section h2 {
@@ -189,6 +189,10 @@ body.menuExpanded .closeMenu {
   visibility: visible;
 }
 
+.menu {
+  transform: translate(100%);
+}
+
 .menu .closeMenu {
   position: fixed;
 }
@@ -202,6 +206,9 @@ body.menuExpanded .menu {
   height: 100vh;
 
   padding: var(--nav-height);
+
+  transform: translateX(0%);
+  transition: transform 1s;
 }
 
 body.menuExpanded .logo,
@@ -273,8 +280,11 @@ body.menuExpanded nav button {
 
 #home {
   background: var(--purple-bg);
+  padding-bottom: 6.4rem;
 
   border-bottom: inset 0.4rem var(--green);
+
+  text-align: left;
 }
 
 #home .wrapper {
@@ -295,7 +305,8 @@ body.menuExpanded nav button {
 
 .arrowLink {
   width: 13rem;
-  margin: 0 auto;
+  margin-inline: auto;
+  margin-top: 2.4rem;
 
   display: flex;
   justify-content: center;
@@ -327,6 +338,7 @@ body.menuExpanded nav button {
 /* ========POSTS#POSTS========== */
 
 #posts {
+  text-align: left;
   padding-bottom: 0;
 }
 
@@ -335,14 +347,192 @@ body.menuExpanded nav button {
 }
 
 #posts article {
-  margin-block: 2.5rem;
-  padding-bottom: 2rem;
-
-  border-bottom: 0.1rem solid var(--border);
+  padding-block: 2.3rem;
 }
 
-#posts article:nth-child(6) {
-  margin-bottom: 0;
+#posts article:nth-child(2) {
+  border-top: 0.1rem solid var(--border);
+}
+
+/* ========SUBPOSTS#SUBPOSTS========== */
+#subPosts {
+  padding-top: 6.3rem;
+  padding-bottom: 0rem;
+ 
+  text-align: left;
+}
+
+#subPosts .content {
+  margin-bottom: 4rem;
+}
+
+/* ========RESPONSIVO========== */
+
+@media (min-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+
+  .wrapper {
+    width: min(116.9rem, 100%);
+  }
+
+  section h1 {
+    line-height: 5.4rem;
+
+    font-size: 3.6rem;
+  }
+
+  section h2 {
+    font-size: 2.4rem;
+  }
+
+  nav {
+    height: 10%;
+  }
+
+  .col-a {
+    grid-area: A;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+  /* ========NAV#NAVIGATION========== */
+  /* =RESET= */
+
+  nav#navigation .wrapper * {
+    margin: 0;
+    padding: 0;
+    visibility: initial;
+    opacity: initial;
+    flex-direction: initial;
+    position: inherit;
+    font-size: initial;
+    font-weight: initial;
+    transform: initial;
+    color: initial;
+    border: initial;
+    background: initial;
+    filter: initial;
+  }
+
+  nav#navigation a.logo svg {
+    width: initial;
+    padding-top: 1rem;
+  }
+
+  nav#navigation .closeMenu,
+  nav#navigation .openMenu {
+    display: none;
+  }
+
+  nav#navigation .menu {
+    width: 67%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav#navigation .menu ul {
+    gap: 3.2rem;
+  }
+
+  nav#navigation .menu ul * {
+    padding-left: 0.3rem;
+
+    color: var(--light-purple);
+  }
+
+  nav#navigation .menu ul a {
+    opacity: 0.8;
+  }
+
+  nav#navigation .menu ul a:hover {
+    border-left: 0.3rem solid var(--green);
+    
+    opacity: 1;
+  }
+
+  nav#navigation .menu input {
+    padding: 1.4rem 2rem;
+    background: var(--dark-bg);
+
+    font-size: 1.6rem;
+    font-family: "Roboto";
+    color: var(--light-purple);
+  }
+
+  nav#navigation .menu .magnifierSearch {
+    padding: 1rem 2.3rem;
+    background: var(--button-bg);
+  }
+
+  /* ========HOME#HOME========== */
+
+  #home .wrapper {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-areas: "A B";
+  }
+
+  #home {
+    text-align: left;
+    padding-bottom: 6.4rem;
+  }
+
+  #home .col-a p {
+    width: 46rem;
+  }
+
+  #home .arrowLink {
+    width: 11.2rem;
+    margin-top: -4.4rem;
+    margin-inline: 0;
+  }
+
+  #home .col-a {
+    padding-right: 3rem;
+    align-self: center;
+  }
+
+  /* ========POSTS#POSTS========== */
+
+  #posts .wrapper {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-areas: "A B";
+  }
+
+  #posts {
+    text-align: left;
+  }
+
+  #posts .date,
+  #posts h2 {
+    padding-block: 0.8rem;
+  }
+
+  #posts .col-b {
+    padding-left: 13.1rem;
+    align-self: center;
+  }
+
+  /* ========SUBPOSTS#SUBPOSTS========== */
+
+  #subPosts .wrapper {
+    display: flex;
+  }
+
+  #subPosts {
+    text-align: left;
+  }
+
+  #subPosts .date,
+  #subPosts h2 {
+    padding-block: 0.8rem;
+  }
 }
 
 /* ========ANIMATIONS========== */
