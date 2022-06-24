@@ -381,10 +381,6 @@ body.menuExpanded nav button {
     background: transparent;
   }
 
-  body {
-    overflow: auto;
-  }
-
   .wrapper {
     width: min(116.9rem, 100%);
   }
